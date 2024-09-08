@@ -1,0 +1,12 @@
+[build]
+publish = "dist"         # The folder where your built site is located (e.g., dist, build, public)
+base = "."               # The base directory of your project (usually the root folder)
+
+[context.production]
+branch = "main"          # The branch you want to deploy from (change to your branch name)
+
+[context.deploy-preview]
+branch = "develop"       # Example branch for previewing deploys
+
+[context.branch-deploy]
+branch = "feature/*"     # Example for deploying feature branches
